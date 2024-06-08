@@ -1,0 +1,82 @@
+nav {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 100px;
+    backdrop-filter: blur(3px);
+    z-index: 999;
+}
+
+nav::before {
+    content: "";
+    background: #FFFFFF;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+}
+
+nav .logo img {
+    width: 100px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+nav ul li a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    margin: 0;
+    padding: .5em 1em;
+    border-radius: .5em;
+    border: 2px transparent solid;
+    transition: ease-in-out .2s;
+}
+
+nav ul li a:hover {
+    border: 2px rgba(251, 188, 5, 1) solid;
+    color: #000;
+    box-shadow: 0 0 5px rgba(251, 188, 5, 1);
+}
+
+nav ul li a.active {
+    color: #fff;
+    background: #2783C5;
+    border: 2px rgba(251, 188, 5, 1) solid;
+    text-shadow: 0 0 3px #fff;
+    box-shadow: 0 0 5px rgba(251, 188, 5, 1);
+}
+
+nav .masuk a {
+    border: 2px rgba(251, 188, 5, 1) solid;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    margin: 0;
+    padding: .5em 1em;
+    border-radius: .5em;
+    transition: ease .2s;
+}
+
+nav .masuk a:hover {
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    background: rgba(251, 188, 5, 1);
+    box-shadow: 0 0 5px rgba(251, 188, 5, 1);
+}
